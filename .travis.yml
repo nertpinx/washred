@@ -1,0 +1,10 @@
+language: python
+python:
+ - "3.2"
+ - "3.3"
+ - "3.4"
+ - "nightly"
+ - "pypy3"
+# command to run tests
+# for now we don't have any test suite, but that should come later
+script: ./setup.py pylint

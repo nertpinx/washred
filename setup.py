@@ -40,7 +40,7 @@ setup(
     name='washred',
     version='0.0.1',
     description='Washington Redskins',
-    long_description=''.join(open('README.md').readlines()),
+    long_description=''.join(open('README.rst').readlines()),
     keywords='git, github, gerrit, gerrithub, tryout',
     author='Martin Kletzander',
     author_email='nert.pinx+github@gmail.com',

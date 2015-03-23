@@ -8,8 +8,8 @@ from redwash import greetings
 
 def main(argv=None):
     """ This function has so many things it can do! """
-    if argv:
-        greetings.greet(''.join(argv))
+    if argv is not None and len(argv) > 1:
+        greetings.greet(''.join(argv[1:]))
     else:
         greetings.greet()
     return 0

@@ -38,7 +38,7 @@ class CheckPylint(Command):
 
 setup(
     name='washred',
-    version='0.0.1',
+    version='0.0.2',
     description='Washington Redskins',
     long_description=''.join(open('README.rst').readlines()),
     keywords='git, github, gerrit, gerrithub, tryout',

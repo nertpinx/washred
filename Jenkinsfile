@@ -24,7 +24,7 @@ pipeline {
     stage('during') {
       agent {
         docker {
-          image 'python3'
+          image 'fedora:latest'
         }
 
       }

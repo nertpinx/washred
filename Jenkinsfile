@@ -29,7 +29,7 @@ pipeline {
 
       }
       steps {
-        sh 'python setup.py pylint'
+        sh 'dnf install -y python && ./setup.py pylint'
       }
     }
     stage('post') {

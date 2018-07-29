@@ -10,7 +10,7 @@ pipeline {
       parallel {
         stage('almost') {
           steps {
-            sleep 20
+            sleep 5
             sh 'pwd'
           }
         }

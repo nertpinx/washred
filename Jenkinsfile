@@ -22,6 +22,12 @@ pipeline {
       }
     }
     stage('during') {
+      agent {
+        docker {
+          image 'python3'
+        }
+
+      }
       steps {
         sh 'python setup.py pylint'
       }
@@ -38,14 +44,14 @@ pipeline {
             node(label: 'meh')
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             echo 'aaaaaa'
           }
         }
       }
     }
-    stage('') {
+    stage('error') {
       steps {
         echo 'asdf'
         isUnix()

@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('pre') {
       steps {
-        echo 'Preing'
+        echo 'Pre-ing'
       }
     }
     stage('almost') {

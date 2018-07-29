@@ -24,12 +24,12 @@ pipeline {
     stage('during') {
       agent {
         docker {
-          image 'fedora:latest'
+          image 'python:3-alpine'
         }
 
       }
       steps {
-        sh 'dnf install -y python && ./setup.py pylint'
+        sh './setup.py pylint'
       }
     }
     stage('post') {

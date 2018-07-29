@@ -41,7 +41,11 @@ pipeline {
         }
         stage('popost') {
           steps {
-            node(label: 'meh')
+            node(label: 'meh') {
+              sh 'pwd'
+              sh 'id'
+            }
+
           }
         }
         stage('error') {

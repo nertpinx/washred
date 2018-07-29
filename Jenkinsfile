@@ -39,15 +39,6 @@ pipeline {
             build(job: 'asdf', quietPeriod: 5)
           }
         }
-        stage('popost') {
-          steps {
-            node(label: 'meh') {
-              sh 'pwd'
-              sh 'id'
-            }
-
-          }
-        }
         stage('error') {
           steps {
             echo 'aaaaaa'

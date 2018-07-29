@@ -29,7 +29,7 @@ pipeline {
 
       }
       steps {
-        sh 'pip install pylint pep && ./setup.py pylint'
+        sh 'pip install pylint pep8 && ./setup.py pylint'
       }
     }
     stage('post') {
